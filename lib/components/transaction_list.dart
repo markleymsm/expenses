@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import '../models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
 
-  // const TransactionList {super.key});
   const TransactionList(this.transactions, {Key? key}) : super(key: key);
 
   @override
