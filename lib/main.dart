@@ -94,7 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      title: const Text('Despesas pessoais'),
+      title: const Text(
+        'Despesas pessoais',
+      ),
       actions: [
         IconButton(
           onPressed: () => _openTransactionFormModal(context),
