@@ -128,12 +128,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             if (_showChart || isLandScape)
               SizedBox(
-                height: availebleHeigth * (isLandScape ? 0.7 : 0.30),
+                height: availebleHeigth * (isLandScape ? 0.8 : 0.30),
                 child: Chart(_recentTransactions),
               ),
             if (!_showChart || !isLandScape)
               SizedBox(
-                height: availebleHeigth * 0.70,
+                height: availebleHeigth * (isLandScape ? 1 : 0.8),
                 child: TransactionList(_transactions, _removeTransaction),
               ),
           ],
